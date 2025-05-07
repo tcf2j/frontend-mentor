@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+body {
+    background-color:hsl(210, 46%, 95%);
+    font-family: 'Manrope';
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.card {
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    background-color: white;
+    overflow: hidden;
+    width: 730px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+.left img{
+    height: 100%;
+    object-fit: cover;
+}
+
+.left {
+    width: 40%;
+}
+
+.right {
+    width: 60%; 
+    height: 100%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.cardTitle{
+    font-weight:700 ;
+}
+
+.cardParagraph {
+    height: 70%;
+}
+
+.cardFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 15%;
+}
+
+.cardProfile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.social img{
+    width: 16px;
+    height: 16px;
+}
+
+#name{
+    font-weight: 700;
+}
+
+#bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.social {
+    background-color: hsl(210, 46%, 95%); /* light gray */
+    padding: 0.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.social:hover {
+    background-color: hsl(214, 17%, 51%); /* darker shade for contrast */
+    transform: scale(1.1); /* slightly enlarge */
+  }
+  
+.social:hover img {
+    filter: brightness(0) invert(1); /* makes the icon white on dark bg */
+  }
+
+.cardTitle h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .cardParagraph p {
+    color: hsl(214, 17%, 51%);
+    font-size: 0.875rem;
+  }
+
+  social-wrapper {
+    position: relative;
+  }
+  
+  .share-popup {
+    display: none;
+    position: absolute;
+    bottom: 125%; /* Position it above the button */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: hsl(217, 19%, 35%);
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    z-index: 10;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .share-popup img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .social-wrapper:hover .share-popup {
+    display: flex;
+  }
